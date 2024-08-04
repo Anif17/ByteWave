@@ -8,10 +8,10 @@ function home() {
   return (
     <>
       <Hero />
-      <About_Us />
-      <New_Collection />
-      <Testimonial />
       <Content_info />
+      <About_Us />
+      <Testimonial />
+      <New_Collection />
     </>
   );
 }
