@@ -40,12 +40,12 @@ export default function Example() {
           >
             About Us
           </a>
-          <a
+          {/* <a
             href="/product"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Product
-          </a>
+          </a> */}
         </PopoverGroup>
       </nav>
       <Dialog
@@ -58,11 +58,7 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+              <img alt="" src={CompanyLogo} className="h-8 w-auto" />
             </a>
             <button
               type="button"
@@ -77,23 +73,23 @@ export default function Example() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Home
                 </a>
                 <a
-                  href="#"
+                  href="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About Us
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Product
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

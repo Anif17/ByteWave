@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Unmatched_Expertise from "../assets/Unmatched_Expertise.png";
 import Quality_Products from "../assets/Quality_Products.png";
 import Customer_Centric_Service from "../assets/Customer_Centric_Service.png";
@@ -6,16 +10,24 @@ import Fast_Turnaround from "../assets/Fast_Turnaround.png";
 import Comprehensive_Support from "../assets/Comprehensive_Support.png";
 
 function Content_info() {
+  useEffect(() => {
+    AOS.init({ duration: 1200 }); // Initialize AOS with custom settings, like duration
+  }, []);
+
   return (
     <>
       <section className="bg-white text-gray-900 py-8 sm:py-12 lg:py-16">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="sm:text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold sm:text-4xl">
+            <h2 className="text-3xl font-bold sm:text-4xl" data-aos="fade-up">
               What makes us special
             </h2>
 
-            <p className="mt-4 text-gray-600">
+            <p
+              className="mt-4 text-gray-600"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               Our skilled technicians are experts in diagnosing and repairing a
               wide range of electronics. With years of experience, we handle
               each repair with precision and care.
@@ -23,9 +35,13 @@ function Content_info() {
           </div>
 
           <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4" data-aos="fade-right">
               <span className="shrink-0 rounded-lg bg-gray-100 p-4">
-                <img className="h-5 w-5" src={Unmatched_Expertise} />
+                <img
+                  className="h-5 w-5"
+                  src={Unmatched_Expertise}
+                  alt="Unmatched Expertise"
+                />
               </span>
 
               <div>
@@ -40,9 +56,17 @@ function Content_info() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <span className="shrink-0 rounded-lg bg-gray-100 p-4">
-                <img className="h-5 w-5" src={Quality_Products} />
+                <img
+                  className="h-5 w-5"
+                  src={Quality_Products}
+                  alt="Quality Products"
+                />
               </span>
 
               <div>
@@ -57,9 +81,17 @@ function Content_info() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <span className="shrink-0 rounded-lg bg-gray-100 p-4">
-                <img className="h-5 w-5" src={Customer_Centric_Service} />
+                <img
+                  className="h-5 w-5"
+                  src={Customer_Centric_Service}
+                  alt="Customer Centric Service"
+                />
               </span>
 
               <div>
@@ -74,9 +106,17 @@ function Content_info() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <span className="shrink-0 rounded-lg bg-gray-100 p-4">
-                <img className="h-5 w-5" src={Innovative_Solutions} />
+                <img
+                  className="h-5 w-5"
+                  src={Innovative_Solutions}
+                  alt="Innovative Solutions"
+                />
               </span>
 
               <div>
@@ -91,9 +131,17 @@ function Content_info() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
               <span className="shrink-0 rounded-lg bg-gray-100 p-4">
-                <img className="h-5 w-5" src={Fast_Turnaround} />
+                <img
+                  className="h-5 w-5"
+                  src={Fast_Turnaround}
+                  alt="Fast Turnaround"
+                />
               </span>
 
               <div>
@@ -107,9 +155,17 @@ function Content_info() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            <div
+              className="flex items-start gap-4"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
               <span className="shrink-0 rounded-lg bg-gray-100 p-4">
-                <img className="h-5 w-5" src={Comprehensive_Support} />
+                <img
+                  className="h-5 w-5"
+                  src={Comprehensive_Support}
+                  alt="Comprehensive Support"
+                />
               </span>
 
               <div>
